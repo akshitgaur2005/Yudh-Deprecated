@@ -1,16 +1,83 @@
-[gd_scene load_steps=3 format=3 uid="uid://cg2rit0fu56ec"]
+[gd_scene load_steps=9 format=3 uid="uid://cg2rit0fu56ec"]
+
+[ext_resource type="Script" path="res://scripts/troop.gd" id="1_nkoji"]
+[ext_resource type="PackedScene" uid="uid://carriknt7bbwn" path="res://scenes/spear.tscn" id="2_ifjgx"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yfcti"]
+albedo_color = Color(0.863201, 0.310634, 0, 1)
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_pq0sn"]
+material = SubResource("StandardMaterial3D_yfcti")
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_p8qos"]
 
+[sub_resource type="Animation" id="Animation_oemt1"]
+length = 4.0
+
+[sub_resource type="Animation" id="Animation_gjqgb"]
+resource_name = "thrust"
+length = 4.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("BodyPivot/WeaponPivot:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 4),
+"transitions": PackedFloat32Array(-2, -2),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("BodyPivot/WeaponPivot/Spear:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5, 1.5, 2, 3, 4),
+"transitions": PackedFloat32Array(-2, -2, -2, -2, -2, -2),
+"update": 0,
+"values": [Vector3(0.612575, -0.00532418, -0.0305229), Vector3(0.612575, -0.00532418, -0.0305229), Vector3(0.612575, -0.00532418, 1.38031), Vector3(0.612575, -0.00532418, -0.576688), Vector3(0.612575, -0.00532418, -0.0305229), Vector3(0.612575, -0.00532418, -0.0305229)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("BodyPivot/WeaponPivot/Spear:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.5, 1.5, 4),
+"transitions": PackedFloat32Array(-2, -2, -2, -2),
+"update": 0,
+"values": [Vector3(-1.0472, 0, 0), Vector3(-1.5708, 0, 0), Vector3(-1.5708, 0, 0), Vector3(-1.0472, 0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_0hipb"]
+_data = {
+"RESET": SubResource("Animation_oemt1"),
+"thrust": SubResource("Animation_gjqgb")
+}
+
 [node name="Troop" type="CharacterBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+script = ExtResource("1_nkoji")
 
-[node name="Pivot" type="Node3D" parent="."]
+[node name="BodyPivot" type="Node3D" parent="."]
 
-[node name="Body" type="MeshInstance3D" parent="Pivot"]
+[node name="Body" type="MeshInstance3D" parent="BodyPivot"]
 mesh = SubResource("CapsuleMesh_pq0sn")
+
+[node name="WeaponPivot" type="Node3D" parent="BodyPivot"]
+
+[node name="Spear" parent="BodyPivot/WeaponPivot" instance=ExtResource("2_ifjgx")]
+transform = Transform3D(1, 0, 0, 0, 0.499998, 0.866026, 0, -0.866026, 0.499998, 0.612575, -0.00532418, -0.0305229)
 
 [node name="CollisionBody" type="CollisionShape3D" parent="."]
 shape = SubResource("CapsuleShape3D_p8qos")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_0hipb")
+}

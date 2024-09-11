@@ -1,4 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://c2l0sk7syiiq8"]
+[gd_scene load_steps=5 format=3 uid="uid://c2l0sk7syiiq8"]
+
+[ext_resource type="PackedScene" uid="uid://cg2rit0fu56ec" path="res://scenes/troop.tscn" id="1_sh0uv"]
+[ext_resource type="PackedScene" uid="uid://dsiwteoru3v0y" path="res://scenes/user.tscn" id="2_dipgi"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_aoseg"]
 size = Vector3(60, 2, 60)
@@ -20,3 +23,12 @@ mesh = SubResource("BoxMesh_ul5gi")
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.516055, 0.856555, 0, -0.856555, 0.516055, 0, 21.7763, 0)
 shadow_enabled = true
+
+[node name="Troop" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 7)
+
+[node name="Troop2" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 1, -9)
+
+[node name="User" parent="." instance=ExtResource("2_dipgi")]
+transform = Transform3D(1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 1, 15, 39)

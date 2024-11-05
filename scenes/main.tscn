@@ -18,17 +18,192 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
 shape = SubResource("BoxShape3D_aoseg")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Ground"]
+layers = 2
 mesh = SubResource("BoxMesh_ul5gi")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.516055, 0.856555, 0, -0.856555, 0.516055, 0, 21.7763, 0)
 shadow_enabled = true
 
-[node name="Troop" parent="." instance=ExtResource("1_sh0uv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 7)
-
-[node name="Troop2" parent="." instance=ExtResource("1_sh0uv")]
-transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0, 1, -9)
-
 [node name="User" parent="." instance=ExtResource("2_dipgi")]
-transform = Transform3D(1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 1, 15, 39)
+transform = Transform3D(1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 1, 2, 17)
+
+[node name="Infantry" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 1, 14)
+
+[node name="Infantry2" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17, 1, 14)
+
+[node name="Infantry3" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 1, 14)
+
+[node name="Infantry4" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 1, 14)
+
+[node name="Infantry5" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 1, 14)
+
+[node name="Infantry6" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 1, 14)
+
+[node name="Infantry7" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 1, 14)
+
+[node name="Infantry8" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 14)
+
+[node name="Infantry9" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 1, 14)
+
+[node name="Infantry10" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 1, 14)
+
+[node name="Infantry11" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 1, 14)
+
+[node name="Infantry12" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 1, 14)
+
+[node name="Infantry13" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 1, 14)
+
+[node name="Infantry14" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 1, 14)
+
+[node name="Infantry15" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 1, 14)
+
+[node name="Infantry16" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 1, 6)
+
+[node name="Infantry17" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17, 1, 6)
+
+[node name="Infantry18" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 1, 6)
+
+[node name="Infantry19" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 1, 6)
+
+[node name="Infantry20" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 1, 6)
+
+[node name="Infantry21" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 1, 6)
+
+[node name="Infantry22" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 1, 6)
+
+[node name="Infantry23" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 6)
+
+[node name="Infantry24" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 1, 6)
+
+[node name="Infantry25" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 1, 6)
+
+[node name="Infantry26" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 1, 6)
+
+[node name="Infantry27" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 1, 6)
+
+[node name="Infantry28" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 1, 6)
+
+[node name="Infantry29" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 1, 6)
+
+[node name="Infantry30" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 1, 6)
+
+[node name="Infantry31" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 1, -4)
+
+[node name="Infantry32" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17, 1, -4)
+
+[node name="Infantry33" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 1, -4)
+
+[node name="Infantry34" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 1, -4)
+
+[node name="Infantry35" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 1, -4)
+
+[node name="Infantry36" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 1, -4)
+
+[node name="Infantry37" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 1, -4)
+
+[node name="Infantry38" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, -4)
+
+[node name="Infantry39" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 1, -4)
+
+[node name="Infantry40" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 1, -4)
+
+[node name="Infantry41" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 1, -4)
+
+[node name="Infantry42" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 1, -4)
+
+[node name="Infantry43" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 1, -4)
+
+[node name="Infantry44" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 1, -4)
+
+[node name="Infantry45" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 1, -4)
+
+[node name="Infantry46" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20, 1, -15)
+
+[node name="Infantry47" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17, 1, -15)
+
+[node name="Infantry48" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14, 1, -15)
+
+[node name="Infantry49" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 1, -15)
+
+[node name="Infantry50" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 1, -15)
+
+[node name="Infantry51" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 1, -15)
+
+[node name="Infantry52" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 1, -15)
+
+[node name="Infantry53" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, -15)
+
+[node name="Infantry54" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 1, -15)
+
+[node name="Infantry55" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 1, -15)
+
+[node name="Infantry56" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 1, -15)
+
+[node name="Infantry57" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 1, -15)
+
+[node name="Infantry58" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 1, -15)
+
+[node name="Infantry59" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 1, -15)
+
+[node name="Infantry60" parent="." instance=ExtResource("1_sh0uv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 1, -15)

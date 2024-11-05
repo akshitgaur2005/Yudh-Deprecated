@@ -10,7 +10,7 @@ func _unhandled_input(event):
 	if event is InputEventMouseMotion:
 		rotate_y(-event.relative.x * 0.005)
 		rotate_x(-event.relative.y * 0.005)
-		rotation.x = clamp(rotation.x, -PI / 4, PI / 4)
+		#rotation.x = clamp(rotation.x, -PI / 4, PI / 4)
 		rotation.z = 0
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
